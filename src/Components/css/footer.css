@@ -254,7 +254,7 @@
 }
 
 .form span{
-    font-size: 45px;
+    font-size: clamp(39px,2vw,45px);
     font-weight: 100;
     margin-bottom: 20px;
 }

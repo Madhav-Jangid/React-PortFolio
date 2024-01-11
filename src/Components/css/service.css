@@ -11,7 +11,6 @@
 .serviceDivCont{
     width: 33%;
     max-width: calc(95% / 3);
-    height: 280px;
     display: flex;
     align-items: flex-start;
     justify-content: center;

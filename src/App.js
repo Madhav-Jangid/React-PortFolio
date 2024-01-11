@@ -21,6 +21,10 @@ import './Components/css/HomeAbout.css';
 import AllServices from './Components/AllServices'
 
 import HomeAboutImage from './Images/HomeImage.png';
+import ResumeImage from './Images/Resume.png';
+import PortFolioImage from './Images/Portfolio.png';
+import MusicPlayerImage from './Images/Music_Player.png';
+import EPortalImage from './Images/E-Portal.png';
 
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import About from './Components/About';
@@ -49,7 +53,16 @@ export default function App() {
         </NavLink>
       </nav>}
       <div>
-        <WorkPageDiv animation="fade-up" link1='https://madhav-jangid.github.io/Reseume/' title='Resume' link2='https://madhav-jangid.github.io/Portfolio/' title2='Portfolio' link3='https://madhav-jangid.github.io/Music-Player/' title3='Music-Player' link4='https://madhav-jangid.github.io/E-Portal/' title4='E-Portal' />
+        <WorkPageDiv 
+        animation="fade-up" 
+        link1={ResumeImage}
+        title1='Resume' 
+        link2={PortFolioImage} 
+        title2='Portfolio' 
+        link3={MusicPlayerImage} 
+        title3='Music-Player' 
+        link4={EPortalImage}
+        title4='E-Portal' />
       </div>
     </div>
   )

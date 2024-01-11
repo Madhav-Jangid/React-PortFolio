@@ -37,9 +37,10 @@
 
 .homeAboutInfo h1 {
     padding: 55px 0;
+    margin: 10px 0;
     width: 40%;
     height: 100%;
-    font-size: 50px;
+    font-size: clamp(30px, 2.7vw , 60px);
     overflow: hidden;
 }
 
