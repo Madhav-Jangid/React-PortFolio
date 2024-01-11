@@ -1,0 +1,80 @@
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: auto;
+    width: 95%;
+    min-height: 300px;
+}
+
+.serviceDivCont{
+    width: 33%;
+    max-width: calc(95% / 3);
+    height: 280px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid var(--lightCream);
+    padding: 20px 50px;
+    margin: 20px 0;
+}
+
+.serviceDivCont h3{
+    font-weight: 100;
+}
+
+.serviceDivCont h4{
+    font-weight: 100;
+    color: #dbc5a672;
+}
+
+.serviceDivCont h1{
+    font-size: 25px;
+    padding: 5px 0 10px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.serviceDivCont a{
+    padding: 30px 0;
+    color: #dbc5a672;
+    transition: .2s all ease;
+}
+
+.serviceDivCont a:hover{
+    color: #DBC5A6;
+}
+
+.serviceDivCont .DownIcon{
+    transform: rotate(-135deg);
+}
+
+.serviceDivCont a:hover  .DownIcon{
+    transform: rotate(-90deg);
+}
+
+.servicePageServices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.servicePageServices .serviceDivCont{
+    min-width: 80%;
+    background-color: #181617;
+}
+
+@media (max-width: 950px) {
+    .services{
+        flex-direction: column;
+    }
+
+    .serviceDivCont{
+        width: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,13 +1,116 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'CursiveFont'; 
+  src: url('https://framerusercontent.com/assets/iXpaxEenVVRK6V44PcVbra2128.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: smallCursive;
+  src: url('https://app.framerstatic.com/Inter-Light.latin-EKF76FXR.woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NormalFont'; 
+  src: url('https://framerusercontent.com/assets/KD28JKvy8FTDeIrVnk1MJ0tDXY.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: NormalFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: var(--black);
+  color: var(--cream);
+  overflow-x: hidden;
+}
+
+
+:root {
+  --black: #0F0E0F;
+  --cream: #DBC5A6;
+  --lightCream: #DBC5A627;
+  --cursor-color:#DBC5A6;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream);
+  padding: 10px 20px;
+  transition: .2s all ease;
+}
+
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 6px;
+  transition: 1s all;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cream);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar:hover {
+  width: 10px;
+}
+
+.mainHeading {
+  font-family: 'CursiveFont';
+  font-size: clamp(60px, 7vw, 135px);
+  font-weight: 100;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.tempHeading {
+  text-align: center;
+  font-family: 'NormalFont';
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: clamp(18px, 2vw, 20px);
+}
+
+.routerLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 18px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+::selection{
+  background-color: var(--cream);
+  color: var(--black);
+}
+
+.Link{
+  cursor: pointer;
 }

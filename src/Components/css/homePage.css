@@ -1,0 +1,69 @@
+.container{
+    height: 100vh;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.content .textContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textContent h1{
+    font-family: 'CursiveFont'; 
+    font-size: clamp(60px, 9vw, 135px);
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+.textContent h4{
+    text-align: center;
+    font-family: 'NormalFont';
+    font-weight: 100;
+    font-size: clamp(18px, 5vw, 20px);
+    /* white-space: nowrap; */
+}
+
+.textContent a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cream);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.DownIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #dbc5a639;
+    background: #dbc5a639;
+    backdrop-filter: blur(3px);
+    font-size: 25px;
+    margin-right: 10px;
+    opacity: .8;
+  transition: .2s all ease;
+}
+
+.DownIcon:hover{
+    opacity: 1;
+}
+
+.textContent a:hover .DownIcon{
+    opacity: 1;
+}

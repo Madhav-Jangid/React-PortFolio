@@ -1,0 +1,137 @@
+.homeAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 2.5%;
+    min-height: 50vh;
+}
+
+.homeAbout .homeAboutimgContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.homeAbout img {
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.homeAboutInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.homeAboutInfo h1 {
+    padding: 55px 0;
+    width: 40%;
+    height: 100%;
+    font-size: 50px;
+    overflow: hidden;
+}
+
+.homeAboutInfo .homeAboutLeftPart {
+    width: 40%;
+    height: 100%;
+    /* padding-right: 55px; */
+}
+
+.homeAboutLeftPart h3{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    opacity: .8;
+    margin: 20px 0;
+    text-align: start;
+}
+
+.homeAboutLeftPart div{
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    gap: 20px;
+}
+
+.homeAboutLeftPart div a{
+    text-decoration: none;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--lightCream);
+    border: 1px solid var(--cream);
+}
+
+
+.homeAboutLeftPart div a span{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .homeAboutInfo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homeAboutimgContainer{
+        min-height: 50vh;
+    }
+
+    .homeAboutimgContainer img{
+        width: 100%;
+    }
+
+    .homeAboutimgContainer h1:last-of-type{
+        position: absolute;
+        padding-left: 330px;
+    }
+    
+    .homeAboutimgContainer h1:first-of-type{
+        position: absolute;
+        padding-right: 330px;
+    }
+
+
+    .homeAboutInfo .homeAboutLeftPart{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .homeAboutInfo h1{
+        width: 100%;
+    }
+    
+    .homeAboutLeftPart h3{
+        text-align: center;
+    }
+
+    .homeAboutInfo .homeAboutLeftPart div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
