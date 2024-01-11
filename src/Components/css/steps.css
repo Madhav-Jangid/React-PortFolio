@@ -9,6 +9,7 @@
 }
 
 #topLogos {
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,21 +185,12 @@
     }
 
     .processPage #topIcon {
-        position: absolute;
-        top: 8.3%;
-        left: 29.4%;
-        transform: translate(-50%,-50%);
-        width: 44%;
+        width: 85%;
+        transform: translateX(0);
         border: 0;
-        border-right: 3px solid var(--cream);
-        border-bottom: 3px solid var(--cream);
-        display: flex;
-        justify-content: flex-end;
+        border-left: 3px solid var(--cream);
     }
 
-    .processPage #topIcon .DownIcon{
-        transform: translateX(225px);
-    }
 
     .step {
         width: 85%;
