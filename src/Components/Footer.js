@@ -5,7 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 
 import { NavLink } from 'react-router-dom';
 import ContactPage from './ContactPage';
@@ -56,7 +56,7 @@ export default function Footer() {
                 <ContactPage />
             <div className='lastFooterDiv'>
                 <p>Developed By Madhav Jangid</p> 
-                <Link className='span' smooth={true} duration={1000} offset={-120} to='homeContainer' data-aos='fade-up'><i className='bx bx-down-arrow-alt'></i>To Top</Link> 
+                {/* <Link className='span' smooth={true} duration={1000} offset={-120} to='homeContainer' data-aos='fade-up'><i className='bx bx-down-arrow-alt'></i>To Top</Link>  */}
             </div>            </div>
 
 
