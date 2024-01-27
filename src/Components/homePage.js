@@ -9,18 +9,7 @@ export default function homePage() {
     // const image = 'https://media.istockphoto.com/id/160504918/photo/dark-night-with-moon.jpg?s=612x612&w=is&k=20&c=7eN1X6rGmOGtOUW4_JZHn2M1beJsfhMQaYa1bkYlnMU=';
     return (
         <div className='container' id='homeContainer'>
-            <Parallax strength={250} bgImage={Image}
-
-                // style={
-                //     {
-                //         backgroundPositoin: 'center',
-                //         backgroundSize: 'contain',
-                //         oveflow: 'hidden',
-                //         width: '100%',
-                //         height: '100%'
-                //     }}
-
-            >
+            <Parallax strength={250} bgImage={Image}>
                 <div className="content">
                     <div className="textContent">
                         <h1>Web Developer</h1>

@@ -7,7 +7,7 @@ import ScrollBar from './Components/scrollBar';
 import ServiceDiv from './Components/serviceDiv';
 import WorkPageDiv from './Components/WorkPageDiv';
 import AnimatedCursor from "react-animated-cursor"
-
+import TwitbirdImage from './Images/TwitbirdImage.png'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -57,12 +57,24 @@ export default function App() {
         animation="fade-up" 
         link1={ResumeImage}
         title1='Resume' 
+        path1='https://madhav-jangid.github.io/Reseume/'
+
         link2={PortFolioImage} 
         title2='Portfolio' 
+        path2='https://madhav-jangid.github.io/Portfolio/'
+
         link3={MusicPlayerImage} 
         title3='Music-Player' 
+        path3='https://madhav-jangid.github.io/Music-Player/'
+
         link4={EPortalImage}
-        title4='E-Portal' />
+        title4='E-Portal'
+        path4='https://madhav-jangid.github.io/E-Portal/'
+
+        link5={TwitbirdImage} 
+        title5='Twitbird'  
+        path5='https://twitbird.vercel.app/'
+        />
       </div>
     </div>
   )
