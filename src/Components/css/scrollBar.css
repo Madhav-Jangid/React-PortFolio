@@ -17,7 +17,7 @@
   z-index: 1;
 }
 
-.scrollerBar {
+/* .scrollerBar {
   height: 100%;
   min-width: 100%;
   display: flex;
@@ -25,7 +25,7 @@
   justify-content: space-around;
   animation: rotateHorizontaly 10s infinite linear;
   overflow: hidden;
-}
+} */
 
 
 .scrollerBar .scrollerElement ,
