@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 export default function homePage() {
     // const image = 'https://media.istockphoto.com/id/160504918/photo/dark-night-with-moon.jpg?s=612x612&w=is&k=20&c=7eN1X6rGmOGtOUW4_JZHn2M1beJsfhMQaYa1bkYlnMU=';
     return (
-        <div className='container' id='homeContainer'>
+        <div className='container' id='homeContainer' style={{width: '100%'}}>
             <Parallax strength={250} bgImage={Image}>
                 <div className="content">
                     <div className="textContent">

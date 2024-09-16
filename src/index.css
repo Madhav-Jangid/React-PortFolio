@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow: hidden; */
+
 }
 
 
@@ -29,12 +29,14 @@
 
 
 body {
+  padding: 0 3px;
+  width: 100vw;
   font-family: NormalFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--black);
   color: var(--cream);
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 

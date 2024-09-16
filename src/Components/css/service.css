@@ -5,6 +5,7 @@
     flex-direction: row;
     margin: auto;
     width: 95%;
+    overflow-x: hidden;
     min-height: 300px;
 }
 

@@ -1,33 +1,52 @@
 import React from 'react';
 import './css/footer.css';
 import './css/scrollBar.css';
+import Slider from 'react-infinite-logo-slider'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 // import { Link } from 'react-scroll';
 
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import ContactPage from './ContactPage';
 
 export default function Footer() {
     return (
         <div className='mainContainer' >
-            <div className='mainScroller' id='scrollBarBottom'>
-                <div className='scrollerBar'>
-                    <div className="scrollerElement">++ Lets Talk ++</div>
-                    <div className="scrollerElement">++ Lets Talk ++</div>
-                    <div className="scrollerElement">++ Lets Talk ++</div>
-                    <div className="scrollerElement">++ Lets Talk ++</div>
-                    <div className="scrollerElement">++ Lets Talk ++</div>
-                </div>
-                <div className='scrollerBar'>
-                    <div className="scrollerElement">++ Lets Talk ++</div>
-                    <div className="scrollerElement">++ Lets Talk ++</div>
-                    <div className="scrollerElement">++ Lets Talk ++</div>
-                    <div className="scrollerElement">++ Lets Talk ++</div>
-                    <div className="scrollerElement">++ Lets Talk ++</div>
-                </div>
+            <div style={{
+                width: '100vw', 
+                overflow: 'hidden'
+            }}>
+                <Slider
+                    width="200px"
+                    duration={20}
+                    pauseOnHover={false}
+                    blurBorders={true}
+                    blurBoderColor={'var(--black)'}
+                >
+                    <Slider.Slide className="slideItem slideItem2">
+                        <p>++ Lets Talk ++</p>
+                    </Slider.Slide>
+                    <Slider.Slide className="slideItem slideItem2">
+                        <p>++ Lets Talk ++</p>
+                    </Slider.Slide>
+                    <Slider.Slide className="slideItem slideItem2">
+                        <p>++ Lets Talk ++</p>
+                    </Slider.Slide>
+                    <Slider.Slide className="slideItem slideItem2">
+                        <p>++ Lets Talk ++</p>
+                    </Slider.Slide>
+                    <Slider.Slide className="slideItem slideItem2">
+                        <p>++ Lets Talk ++</p>
+                    </Slider.Slide>
+                    <Slider.Slide className="slideItem slideItem2">
+                        <p>++ Lets Talk ++</p>
+                    </Slider.Slide>
+                    <Slider.Slide className="slideItem slideItem2">
+                        <p>++ Lets Talk ++</p>
+                    </Slider.Slide>
+                </Slider>
             </div>
             <div className="startupText">
                 <p className='footerh3' style={{ fontSize: '15px' }} data-aos='fade-up' >PROJECT IN MIND ?</p>
@@ -54,10 +73,10 @@ export default function Footer() {
                     </div>
                 </div>
                 <ContactPage />
-            <div className='lastFooterDiv'>
-                <p>Developed By Madhav Jangid</p> 
-                {/* <Link className='span' smooth={true} duration={1000} offset={-120} to='homeContainer' data-aos='fade-up'><i className='bx bx-down-arrow-alt'></i>To Top</Link>  */}
-            </div>            </div>
+                <div className='lastFooterDiv'>
+                    <p>Developed By Madhav Jangid</p>
+                </div>
+            </div>
 
 
         </div>

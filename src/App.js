@@ -29,6 +29,7 @@ import EPortalImage from './Images/E-Portal.png';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import About from './Components/About';
 import ContactPage from './Components/ContactPage';
+import TopSlideComponent from './Components/Slider';
 
 export default function App() {
 
@@ -145,7 +146,7 @@ export default function App() {
           <Route path='/' element={
             <>
               <HomePage />
-              <ScrollBar />
+              <TopSlideComponent />
               <ServicePage />
               <ProjectPage />
               <ProcessPage />
