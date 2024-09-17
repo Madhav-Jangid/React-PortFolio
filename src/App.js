@@ -3,6 +3,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import NavBar from './Components/navBar';
 import HomePage from './Components/homePage';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import ScrollBar from './Components/scrollBar';
 import ServiceDiv from './Components/serviceDiv';
 import WorkPageDiv from './Components/WorkPageDiv';
@@ -30,6 +31,7 @@ import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-do
 import About from './Components/About';
 import ContactPage from './Components/ContactPage';
 import TopSlideComponent from './Components/Slider';
+import { Button } from '@mui/material';
 
 export default function App() {
 
@@ -54,27 +56,27 @@ export default function App() {
         </NavLink>
       </nav>}
       <div>
-        <WorkPageDiv 
-        animation="fade-up" 
-        link1={ResumeImage}
-        title1='Resume' 
-        path1='https://madhav-jangid.github.io/Reseume/'
+        <WorkPageDiv
+          animation="fade-up"
+          link1={ResumeImage}
+          title1='Resume'
+          path1='https://madhav-jangid.github.io/Reseume/'
 
-        link2={PortFolioImage} 
-        title2='Portfolio' 
-        path2='https://madhav-jangid.github.io/Portfolio/'
+          link2={PortFolioImage}
+          title2='Portfolio'
+          path2='https://madhav-jangid.github.io/Portfolio/'
 
-        link3={MusicPlayerImage} 
-        title3='Music-Player' 
-        path3='https://madhav-jangid.github.io/Music-Player/'
+          link3={MusicPlayerImage}
+          title3='Music-Player'
+          path3='https://madhav-jangid.github.io/Music-Player/'
 
-        link4={EPortalImage}
-        title4='E-Portal'
-        path4='https://madhav-jangid.github.io/E-Portal/'
+          link4={EPortalImage}
+          title4='E-Portal'
+          path4='https://madhav-jangid.github.io/E-Portal/'
 
-        link5={TwitbirdImage} 
-        title5='Twitbird'  
-        path5='https://twitbird.vercel.app/'
+          link5={TwitbirdImage}
+          title5='Twitbird'
+          path5='https://twitbird.vercel.app/'
         />
       </div>
     </div>
@@ -86,7 +88,7 @@ export default function App() {
       <h3 className='firstH3' data-aos='fade-up'>Our process ensures that we create a website<br /> tailored to your business needs.</h3>
       <div id='topIcon'>
         <Link smooth={true} duration={20000} to='scrollBarBottom' className='DownIcon'><i className='bx bx-down-arrow-alt'></i></Link>
-      </div>  
+      </div>
       <StepDiv shortTitle='do we match?' title='discovery call' content='Before we start, we determine if and how I can help you. What are your requirements for your new website? Why do you need a new website? What goals do you have, and what problems can we solve with a new website?' point1='We get to know each other better' point2='Determine how I can best assist you' point3='Understand the goals you have for your website' num='1' />
 
       <StepDiv shortTitle='WE NEED A PLAN' title='CONCEPT & STRATEGY' content='Together, we develop a strategy that successfully combines your goals with the needs of your target audience. Based on this concept, I create the first wireframes and an interactive prototype. This provides us with a very good impression of the website and the user interface.' point1='UX Design' point2='Wireframes' point3='Interactive Prototype' num='2' />
@@ -160,6 +162,18 @@ export default function App() {
               <Footer />
             </>
           } />
+          <Route path='/resume' element={
+            <div className='resumeSection'>
+              <div id="resumeContainer">
+                <iframe title='My Resume' src="https://docs.google.com/document/d/1HlB1qEM3KI_Y5ckd6eIrTfbYNnjMYAVHWRfUx70C8k0/preview" frameborder="0" id='myResume' ></iframe>
+                <button id='resumeDownlaodButton' onClick={() => window.open("https://docs.google.com/document/d/1HlB1qEM3KI_Y5ckd6eIrTfbYNnjMYAVHWRfUx70C8k0/export?format=pdf", '_blank')}>
+                  <p>Download Resume</p>
+                  <FileDownloadIcon />
+                </button>
+              </div>
+              <Footer />
+            </div>
+          } />
           <Route path='/services' element={
             <>
               <IntroPage
@@ -173,7 +187,7 @@ export default function App() {
               />
               <div className='servicePageServices'>
                 <AllServices
-                id='Designing'
+                  id='Designing'
                   imgLink='https://framerusercontent.com/images/ClfwTvpSaw5mRTAzBuRlbbRVFXQ.jpg?scale-down-to=1024'
                   animation="fade-up"
                   num='Designing'
@@ -189,7 +203,7 @@ export default function App() {
                   content3="With an interactive prototype, you'll have the ability to test your website's functionality before it goes live. This will ensure that your website's design and user experience are optimized for your audience's needs and preferences."
                 />
                 <AllServices
-                id='Development'
+                  id='Development'
                   imgLink='https://framerusercontent.com/images/ekJump78qLmbaynQ3zQfhOoWcAU.jpg?scale-down-to=1024'
                   animation="fade-up"
                   num='Development'
@@ -203,7 +217,7 @@ export default function App() {
                   content3='Get custom web development solutions that are tailored to your specifications, designed to deliver a flawless user experience.'
                 />
                 <AllServices
-                id='Sketching'
+                  id='Sketching'
                   imgLink='https://imgs.search.brave.com/OthU4Rg__vET5MzxJ-dZJRxB5jjFrz3yOjE5u1Zx84A/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vZGlnaXRh/bC1waG90b2dyYXBo/eS1zY2hvb2wuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDEz/LzAxLzQyNTMwODc0/MDBfZmYyZjNjNTdi/Y196LmpwZz9yZXNp/emU9NjAwLDQwMCZz/c2w9MQ' animation="fade-up"
                   num='Sketching'
                   title='Transform moments into Art.'
